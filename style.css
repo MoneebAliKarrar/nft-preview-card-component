@@ -17,18 +17,35 @@ main{
     font-family: "Outfit";
     border-radius: 1rem;
 }
-img{
+.Images{
+    position: relative;
+}
+.Images div{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.Images div:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: .5em;
+}
+.Images div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.mainimg{
     width: 100%;
     border-radius: .5em;
 }
-.viewicon{
-    width: 40px;
-    height: 40px;
-}
-.view:hover{
-    opacity: .5;
-    cursor: pointer;
-}
+
+
 h1{
     color: white;
     margin: .9em 0em;
