@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+}
+main{
+    width: 90%;
+    padding: 1.5em;
+    margin: 4em 2em;
+    background-color: hsl(216, 50%, 16%);
+    font-family: "Outfit";
+    border-radius: 1rem;
+}
+img{
+    width: 100%;
+    border-radius: .5em;
+}
+.viewicon{
+    width: 40px;
+    height: 40px;
+}
+.view:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+h1{
+    color: white;
+    margin: .9em 0em;
+    font-size: 1.35em;
+}
+h1:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.description{
+    color: hsl(215, 51%, 70%);
+    font-size: 1.13em;
+    line-height: 1.3em;
+}
+.ETHandTime{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 0em;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin: 1.1em 0em;
+    padding-bottom: 1.4em;
+}
+.ETH{
+    color: hsl(178, 100%, 50%);
+    font-size: 1em;
+}
+.ETH::before{
+    content: '';
+    display: inline-block;
+    width:.7em;
+    height: 1.2em;
+    background-image: url(./images/icon-ethereum.svg);
+    background-size: cover;
+    margin-right: .5em;
+    vertical-align: bottom;
+}
+.time{
+    color: hsl(215, 51%, 70%);
+}
+.time::before{
+    content: '';
+    display: inline-block;
+    width:1.1em;
+    height: 1.1em;
+    background-image: url(./images/icon-clock.svg);
+    background-size: cover;
+    margin-right: .6em;
+    vertical-align:bottom;
+}
+.creator{
+    margin: .5em 0em;
+    color:  hsl(215, 51%, 70%);
+}
+#name{
+    color: white;
+    font-size: 1.03em;
+}
+#name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.creator::before{
+    content: '';
+    display: inline-block;
+    width:1.9em;
+    height: 1.9em;
+    background-image: url(./images/image-avatar.png);
+    background-size: cover;
+    margin-right: 1em;
+    border: 2px solid white;
+    border-radius: 50%;
+    vertical-align: middle;
+    
+}
+@media screen and (min-width:800px) {
+    main{
+        width: 350px;
+    }
+    body{
+        height: 100vh;
+    }
+    
+}
